@@ -1,6 +1,6 @@
 import Foundation
 
-func toEorzeaTime(date: Date) -> Date {
+func toEorzeaTime(date: Date = Date()) -> Date {
     let eorzeaMultiplier = 3600.0 / 175.0
     
     // Calculate how many seconds have elapsed since 1/1/1970
@@ -12,9 +12,8 @@ func toEorzeaTime(date: Date) -> Date {
     return Date(timeIntervalSince1970: eorzeaSeconds)
 }
 
-func getEorzeaTime(twentyFourHourTime: Bool) -> String {
-    let currentDate = Date()
-    let eorzeaDate = toEorzeaTime(date: currentDate)
+func getEorzeaTimeString(twentyFourHourTime: Bool) -> String {
+    let eorzeaDate = toEorzeaTime()
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = twentyFourHourTime ? "HH:mm" : "hh:mm a"
     dateFormatter.timeZone = TimeZone(identifier: "UTC")
