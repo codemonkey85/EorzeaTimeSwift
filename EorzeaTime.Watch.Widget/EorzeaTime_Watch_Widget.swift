@@ -45,7 +45,12 @@ struct EorzeaTime_Watch_WidgetEntryView : View {
     var body: some View {
         VStack {
             Text("Eorzea Time:")
-            Text(getEorzeaTimeString(twentyFourHourTime: entry.configuration.twentyFourHourTime))
+            HStack {
+                Image(systemName: "clock")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text(getEorzeaTimeString(twentyFourHourTime: entry.configuration.twentyFourHourTime))
+            }
         }
     }
 }

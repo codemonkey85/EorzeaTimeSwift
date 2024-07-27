@@ -9,16 +9,23 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Eorzea Time:")
-            Text(currentEorzeaTimeString)
+            HStack {
+                Image(systemName: "clock")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text(currentEorzeaTimeString)
+            }
             HStack {
                 Text("24 Hour Time")
                 Toggle("", isOn: $twentyFourHourTime)
                     .labelsHidden()
             }
+            .padding()
         }
         .onReceive(timer) { _ in
             currentEorzeaTimeString = getEorzeaTimeString(twentyFourHourTime: twentyFourHourTime)
         }
+        .padding()
     }
 }
 

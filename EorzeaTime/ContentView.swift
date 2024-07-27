@@ -8,11 +8,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "clock")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("The Time in Eorzea is now:")
-            Text(currentEorzeaTimeString)
+            Text("Eorzea Time:")
+            HStack {
+                Image(systemName: "clock")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text(currentEorzeaTimeString)
+            }
             HStack {
                 Text("24 Hour Time")
                 Toggle("", isOn: $twentyFourHourTime)
