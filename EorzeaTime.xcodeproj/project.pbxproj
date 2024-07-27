@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E70446732C557C6900465E19 /* EorzeaTime.Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E70446722C557C6900465E19 /* EorzeaTime.Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7CCBBAB2C55B460003FE23C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D120152C557E4600E81160 /* WidgetKit.framework */; platformFilters = (ios, macos, ); };
+		E7CCBBAC2C55B460003FE23C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D120172C557E4600E81160 /* SwiftUI.framework */; };
+		E7CCBBBA2C55B461003FE23C /* EorzeaTime.WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E7CCBBAA2C55B45F003FE23C /* EorzeaTime.WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E7D120092C557D4800E81160 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D120082C557D4800E81160 /* Common.swift */; };
 		E7D1200A2C557D4800E81160 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D120082C557D4800E81160 /* Common.swift */; };
 		E7D1200B2C557D4800E81160 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D120082C557D4800E81160 /* Common.swift */; };
@@ -56,6 +59,13 @@
 			remoteGlobalIDString = E70446712C557C6900465E19;
 			remoteInfo = "EorzeaTime.Watch Watch App";
 		};
+		E7CCBBB82C55B461003FE23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E70445F52C55727D00465E19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7CCBBA92C55B45F003FE23C;
+			remoteInfo = EorzeaTime.WidgetExtension;
+		};
 		E7D120212C557E4700E81160 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E70445F52C55727D00465E19 /* Project object */;
@@ -75,6 +85,17 @@
 				E70446732C557C6900465E19 /* EorzeaTime.Watch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCBBBF2C55B461003FE23C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7CCBBBA2C55B461003FE23C /* EorzeaTime.WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E7D120282C557E4700E81160 /* Embed Foundation Extensions */ = {
@@ -99,6 +120,7 @@
 		E70446722C557C6900465E19 /* EorzeaTime.Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EorzeaTime.Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70446842C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EorzeaTime.Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E704468E2C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EorzeaTime.Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CCBBAA2C55B45F003FE23C /* EorzeaTime.WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EorzeaTime.WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D120072C557D4800E81160 /* EorzeaTime.Watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EorzeaTime.Watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7D120082C557D4800E81160 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E7D120132C557E4600E81160 /* EorzeaTime.Watch.WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EorzeaTime.Watch.WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +129,112 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E7CCBB8C2C559BF1003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				NotificationHandler.swift,
+			);
+			target = E70445FC2C55727D00465E19 /* EorzeaTime */;
+		};
+		E7CCBBA02C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = E704460D2C55727E00465E19 /* EorzeaTimeTests */;
+		};
+		E7CCBBA12C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = E70446172C55727E00465E19 /* EorzeaTimeUITests */;
+		};
+		E7CCBBA22C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = E70446712C557C6900465E19 /* EorzeaTime.Watch Watch App */;
+		};
+		E7CCBBA32C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = E70446832C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests */;
+		};
+		E7CCBBA42C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = E704468D2C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests */;
+		};
+		E7CCBBA52C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = E7D120122C557E4600E81160 /* EorzeaTime.Watch.WidgetExtension */;
+		};
+		E7CCBBBE2C55B461003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E7CCBBA92C55B45F003FE23C /* EorzeaTime.WidgetExtension */;
+		};
+		E7CCBBCB2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E70445FC2C55727D00465E19 /* EorzeaTime */;
+		};
+		E7CCBBCC2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E704460D2C55727E00465E19 /* EorzeaTimeTests */;
+		};
+		E7CCBBCD2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E70446172C55727E00465E19 /* EorzeaTimeUITests */;
+		};
+		E7CCBBCE2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E70446712C557C6900465E19 /* EorzeaTime.Watch Watch App */;
+		};
+		E7CCBBCF2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E70446832C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests */;
+		};
+		E7CCBBD02C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E704468D2C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests */;
+		};
+		E7CCBBD12C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EorzeaTimeAttributes.swift,
+			);
+			target = E7D120122C557E4600E81160 /* EorzeaTime.Watch.WidgetExtension */;
+		};
 		E7D120242C557E4700E81160 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -117,12 +245,13 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E70445FF2C55727D00465E19 /* EorzeaTime */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EorzeaTime; sourceTree = "<group>"; };
+		E70445FF2C55727D00465E19 /* EorzeaTime */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E7CCBB8C2C559BF1003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBA02C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBA12C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBA22C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBA32C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBA42C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBA52C55B3DB003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = EorzeaTime; sourceTree = "<group>"; };
 		E70446112C55727E00465E19 /* EorzeaTimeTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EorzeaTimeTests; sourceTree = "<group>"; };
 		E704461B2C55727E00465E19 /* EorzeaTimeUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EorzeaTimeUITests; sourceTree = "<group>"; };
 		E70446762C557C6900465E19 /* EorzeaTime.Watch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "EorzeaTime.Watch Watch App"; sourceTree = "<group>"; };
 		E70446872C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "EorzeaTime.Watch Watch AppTests"; sourceTree = "<group>"; };
 		E70446912C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "EorzeaTime.Watch Watch AppUITests"; sourceTree = "<group>"; };
+		E7CCBBAD2C55B460003FE23C /* EorzeaTime.Widget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E7CCBBCB2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBCC2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBCD2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBCE2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBCF2C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBD02C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBD12C55B4BA003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E7CCBBBE2C55B461003FE23C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = EorzeaTime.Widget; sourceTree = "<group>"; };
 		E7D120192C557E4700E81160 /* EorzeaTime.Watch.Widget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E7D120242C557E4700E81160 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = EorzeaTime.Watch.Widget; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -169,6 +298,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7CCBBA72C55B45F003FE23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CCBBAC2C55B460003FE23C /* SwiftUI.framework in Frameworks */,
+				E7CCBBAB2C55B460003FE23C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7D120102C557E4600E81160 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +330,7 @@
 				E70446872C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests */,
 				E70446912C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests */,
 				E7D120192C557E4700E81160 /* EorzeaTime.Watch.Widget */,
+				E7CCBBAD2C55B460003FE23C /* EorzeaTime.Widget */,
 				E7D120142C557E4600E81160 /* Frameworks */,
 				E70445FE2C55727D00465E19 /* Products */,
 				E70446632C557A9900465E19 /* EorzeaTime.Watch-Bridging-Header.h */,
@@ -210,6 +349,7 @@
 				E70446842C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests.xctest */,
 				E704468E2C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests.xctest */,
 				E7D120132C557E4600E81160 /* EorzeaTime.Watch.WidgetExtension.appex */,
+				E7CCBBAA2C55B45F003FE23C /* EorzeaTime.WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,10 +373,12 @@
 				E70445F92C55727D00465E19 /* Sources */,
 				E70445FA2C55727D00465E19 /* Frameworks */,
 				E70445FB2C55727D00465E19 /* Resources */,
+				E7CCBBBF2C55B461003FE23C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E7CCBBB92C55B461003FE23C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E70445FF2C55727D00465E19 /* EorzeaTime */,
@@ -383,6 +525,28 @@
 			productReference = E704468E2C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E7CCBBA92C55B45F003FE23C /* EorzeaTime.WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CCBBBB2C55B461003FE23C /* Build configuration list for PBXNativeTarget "EorzeaTime.WidgetExtension" */;
+			buildPhases = (
+				E7CCBBA62C55B45F003FE23C /* Sources */,
+				E7CCBBA72C55B45F003FE23C /* Frameworks */,
+				E7CCBBA82C55B45F003FE23C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E7CCBBAD2C55B460003FE23C /* EorzeaTime.Widget */,
+			);
+			name = EorzeaTime.WidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = EorzeaTime.WidgetExtension;
+			productReference = E7CCBBAA2C55B45F003FE23C /* EorzeaTime.WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E7D120122C557E4600E81160 /* EorzeaTime.Watch.WidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7D120252C557E4700E81160 /* Build configuration list for PBXNativeTarget "EorzeaTime.Watch.WidgetExtension" */;
@@ -442,6 +606,9 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = E70446712C557C6900465E19;
 					};
+					E7CCBBA92C55B45F003FE23C = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					E7D120122C557E4600E81160 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -468,6 +635,7 @@
 				E70446832C557C6B00465E19 /* EorzeaTime.Watch Watch AppTests */,
 				E704468D2C557C6B00465E19 /* EorzeaTime.Watch Watch AppUITests */,
 				E7D120122C557E4600E81160 /* EorzeaTime.Watch.WidgetExtension */,
+				E7CCBBA92C55B45F003FE23C /* EorzeaTime.WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -516,6 +684,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E704468C2C557C6B00465E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCBBA82C55B45F003FE23C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,6 +755,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7CCBBA62C55B45F003FE23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7D1200F2C557E4600E81160 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +797,11 @@
 			isa = PBXTargetDependency;
 			target = E70446712C557C6900465E19 /* EorzeaTime.Watch Watch App */;
 			targetProxy = E704468F2C557C6B00465E19 /* PBXContainerItemProxy */;
+		};
+		E7CCBBB92C55B461003FE23C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7CCBBA92C55B45F003FE23C /* EorzeaTime.WidgetExtension */;
+			targetProxy = E7CCBBB82C55B461003FE23C /* PBXContainerItemProxy */;
 		};
 		E7D120222C557E4700E81160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -753,6 +940,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EorzeaTime/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Eorzea Time";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -796,6 +984,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EorzeaTime/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Eorzea Time";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1095,6 +1284,84 @@
 			};
 			name = Release;
 		};
+		E7CCBBBC2C55B461003FE23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EorzeaTime.Widget/EorzeaTime_Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YLT8FWVXBN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EorzeaTime.Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EorzeaTime.Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 BondCodes. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bondcodes.EorzeaTime.EorzeaTime-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E7CCBBBD2C55B461003FE23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EorzeaTime.Widget/EorzeaTime_Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YLT8FWVXBN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EorzeaTime.Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EorzeaTime.Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 BondCodes. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bondcodes.EorzeaTime.EorzeaTime-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		E7D120262C557E4700E81160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1227,6 +1494,15 @@
 			buildConfigurations = (
 				E70446A12C557C6B00465E19 /* Debug */,
 				E70446A22C557C6B00465E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CCBBBB2C55B461003FE23C /* Build configuration list for PBXNativeTarget "EorzeaTime.WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CCBBBC2C55B461003FE23C /* Debug */,
+				E7CCBBBD2C55B461003FE23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
